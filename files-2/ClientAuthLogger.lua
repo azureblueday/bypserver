@@ -13,15 +13,15 @@
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
-
+print("v2")
 -- ========================================
 -- CONFIGURATION
 -- ========================================
 
-local VERCEL_ENDPOINT = "https://your-app.vercel.app" -- CHANGE THIS to your Vercel URL
-local YOUR_API_KEY = "your-api-key-here" -- CHANGE THIS to your actual API key
+local VERCEL_ENDPOINT = "https://bypserver.vercel.app" -- CHANGE THIS to your Vercel URL
+local YOUR_API_KEY = "e" -- CHANGE THIS to your actual API key
 
-local DEBUG_MODE = true -- Set to false in production
+local DEBUG_MODE = false -- Set to false in production
 
 -- ========================================
 -- AUTH LOGGER MODULE
