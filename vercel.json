@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "MAX_IPS_PER_KEY": "3",
+    "MAX_CONCURRENT_SESSIONS": "2",
+    "SUSPICIOUS_DISTANCE_KM": "500",
+    "IP_TRACKING_WINDOW": "3600"
+  }
+}
+```
+
+## 📂 Your GitHub Repo Structure Should Look Like:
+```
+your-repo/
+├── api/
+│   ├── auth-log.js          ← Get from outputs
+│   └── end-session.js       ← Get from outputs
+├── package.json             ← Copy above
+├── vercel.json              ← Copy above
+└── .gitignore               ← Optional (get from outputs)

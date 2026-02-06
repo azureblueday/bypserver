@@ -1,0 +1,19 @@
+{
+  "name": "roblox-auth-logger",
+  "version": "1.0.0",
+  "description": "Auth key sharing detection API for Roblox games",
+  "main": "api/auth-log.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
